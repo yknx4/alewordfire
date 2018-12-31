@@ -22,7 +22,6 @@ config :alewordfire, AlewordfireWeb.Endpoint,
 config :logger, level: :info
 
 config :alewordfire, Alewordfire.Repo,
-   url: {:system, "DATABASE_URL"},
    pool_size: 10
 
 # ## SSL Support
