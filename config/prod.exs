@@ -10,7 +10,7 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :alewordfire, AlewordfireWeb.Endpoint,
-  http: [:inet6, port: System.get_env("PORT") || 4000],
+  http: [:inet6, port: 80],
   url: [host: "www.ale.world", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json",
   load_from_system_env: true,
