@@ -1,0 +1,14 @@
+<p>
+  <span class="has-text-weight-bold is-size-5"><%= @e["title"] %></span> / <%= @e["position"] %>
+  <br />
+  <small><%= @e["from"] %> - <%= @e["to"] %>, <%= @e["location"] %></small>
+</p>
+<p>
+  <%= text_to_html(@e["description"]) %>
+</p>
+<ul>
+  <%= Enum.map(@e["list"], fn t -> %>
+  <li><%= t %></li>
+  <% end) %>
+</ul>
+<br />

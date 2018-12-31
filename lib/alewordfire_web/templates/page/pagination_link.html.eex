@@ -1,0 +1,3 @@
+<li>
+  <%= link(@i, pagination_link_opts(@conn, @i, @pagination)) %>
+</li>

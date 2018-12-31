@@ -1,0 +1,1 @@
+<%= render_many Alewordfire.Data.Experience.data, AlewordfireWeb.AboutView, "single_experience.html", as: :e %>  

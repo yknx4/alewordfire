@@ -1,0 +1,2 @@
+<%= render_many @posts, AlewordfireWeb.PageView, "post.html" %>  
+ 

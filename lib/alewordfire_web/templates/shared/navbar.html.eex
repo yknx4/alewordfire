@@ -1,0 +1,63 @@
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-start">
+      <a class="navbar-item is-hidden-mobile" href="<%= Routes.page_path(@conn, :index) %>">
+        <img src="<%= Routes.static_path(@conn, "/images/aleworld-logo.png") %>" alt="Ale World Logo" class="logo
+        image" >
+      </a>
+      <a class="navbar-item" href="<%= Routes.page_path(@conn, :index) %>">
+        <h1 class="font-title title is-5 has-text-white">ale<span class="has-text-red-main">world</span></h1>
+      </a>
+    </div>
+    <span class="navbar-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="navbar-end navbar-menu">
+      <a class="navbar-item" href="<%= Routes.about_path(@conn, :index) %>">
+        About
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown is-boxed">
+          <%= render_shared(
+            "social_link.html", 
+            title: "Telegram", 
+            icon: "telegram",
+            link: "//t.me/yknx4"
+            )%>
+          <%= render_shared(
+            "social_link.html", 
+            title: "Email", 
+            icon: "envelope",
+            link: "mailto:me@ale.world",
+            type: "fas"
+            )%>        
+          <%= render_shared(
+            "social_link.html", 
+            title: "Github", 
+            icon: "github",
+            link: "//github.com/yknx4"
+            )%>
+          <%= render_shared(
+            "social_link.html", 
+            title: "LinkedIn", 
+            icon: "linkedin",
+            link: "//www.linkedin.com/yknx4"
+            )%>  
+          <%= render_shared(
+            "social_link.html", 
+            title: "Facebook", 
+            icon: "facebook",
+            link: "//www.facebook.com/yknx4"
+            )%>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>

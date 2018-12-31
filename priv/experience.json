@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Korea University",
+    "position": "Student",
+    "from": "February 2015",
+    "to": "June 2015",
+    "location": "Seoul, South Korea",
+    "description": "When I was here I worked in a project where I had to develop my own search engine prototype for web pages. I worked with MySQL to store the data, did all the math with C# .NET and the website to show the result in NodeJS with Express.js.",
+    "list": []
+  },
+  {
+    "title": "Pido Taxi (Chofer)",
+    "position": "Android Developer",
+    "from": "March 2016",
+    "to": "October 2016",
+    "location": "Colima, Mexico",
+    "description": "Native Android application for an Uber-like service for Taxi drivers in the city of Colima, I worked as a developer for specific features, I wasn't involved in the design neither or architecture of the application.",
+    "list": []
+  },
+  {
+    "title": "MagmaLabs",
+    "position": "Software Engineer",
+    "from": "February 2016",
+    "to": "December 2016",
+    "location": "Colima, Mexico",
+    "description": "",
+    "list": [
+      "MagmaRooms: Native Android application to show meeting rooms schedules, getting a fast feedback of when a room was empty or free. This app is designed to be shown in fixed tablets outside of each meeting room.",
+      "Beanstack / Zoobean: In Beanstack I worked as a full stack developer working on a custom administration panel written in AngularJS, with it's backed running on Rails 4 with PostgreSQL as the database. I also maintained database, applying several  optimizations to reduce postgres response time and overall backend optimizations to reduce resources usage and increase responsiveness while site was under heavy load."
+    ]
+  },
+  {
+    "title": "Cuanto Es?",
+    "position": "Mobile Developer",
+    "from": "February 2016",
+    "to": "Present",
+    "location": "Colima, Mexico",
+    "description": "Native Android application developed in Kotlin, in 2018 I fully rebuilt this application utilizing React Native for a broader public\nThis is an app that I made to help people in my city to easily get the fare they should pay for a Taxi ride in the city of Colima, it is based on the official information made available by the local government.",
+    "list": []
+  },
+  {
+    "title": "Progressly",
+    "position": "Full Stack Devops Software Engineer",
+    "from": "December 2016",
+    "to": "April 2018",
+    "location": "Colima, Mexico",
+    "description": "",
+    "list": [
+      "MagmaRooms: Native Android application to show meeting rooms schedules, getting a fast feedback of when a room was empty or free. This app is designed to be shown in fixed tablets outside of each meeting room.",
+      "Beanstack / Zoobean: In Beanstack I worked as a full stack developer working on a custom administration panel written in AngularJS, with it's backed running on Rails 4 with PostgreSQL as the database. I also maintained database, applying several  optimizations to reduce postgres response time and overall backend optimizations to reduce resources usage and increase responsiveness while site was under heavy load."
+    ]
+  },
+  {
+    "title": "Embo (formerly AMV)",
+    "position": "Devops Engineer",
+    "from": "May 2018",
+    "to": "Present",
+    "location": "Colima, Mexico",
+    "description": "",
+    "list": [
+      "Devops: In charge of the project infrastructure, composed of 3 projects, two of them running on top of Heroku, and everything else is running on Amazon Web Services.",
+      "CI/CD: CircleCI integration with automatic deployment to both ElasticBeanstalk and Elastic Container Services simultaneously.",
+      "AutoScaling application with Rolling Deployment on Amazon Elastic Beanstalk",
+      "On-demand background workers with Amazon Elastic Container Services, automatically launcher with a Serverless scheduled function handling the amount of tasks to be run.",
+      "Microservices: Microservice on Elixir/Phoenix to process thousands of records of numeric data",
+      "Microservices: Microservice on Node/Koa to crawl and parse thoudans of html files"
+    ]
+  }
+]

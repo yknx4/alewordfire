@@ -1,0 +1,24 @@
+<div class="column is-three-fifths is-offset-one-fifth about" id="about"">
+  <div class="columns">
+    <%= render_section(
+          "description.html",
+          column_class: "column is-full has-card-top-margin",
+          title: "Resume",
+          icon: "align-justify"
+        ) %> 
+  </div>
+  <div class="columns">
+    <%= render_section(
+      "skills.html",
+      column_class: "column is-half",
+      title: "Skills",
+      icon: "pencil-alt"
+    ) %>  
+    <%= render_section(
+      "experience.html",
+      column_class: "column is-half",
+      title: "Experience",
+      icon: "laptop"
+    ) %>  
+  </div>
+</div>

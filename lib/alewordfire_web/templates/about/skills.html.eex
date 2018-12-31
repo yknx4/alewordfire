@@ -1,0 +1,83 @@
+<ul>
+    <li>Javascript (7 years)
+    <ul>
+    <li>ES6 (2 years)</li>
+    <li>Node.js (6 years)</li>
+    <li>Express.js (5 years)</li>
+    <li>Koa (2 years)</li>
+    <li>Angular.js (2 years)</li>
+    <li>ReactJS (3 year)</li>
+    <li>Unit Testing / Integration Testing / E2E Testing
+    <ul>
+    <li>Jest (2 years)</li>
+    <li>Mocha (1 year)</li>
+    <li><a href="http://Cypress.io">Cypress.io</a> (1 year)</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li>Java/Android (4 years)</li>
+    <li>C# (3 years)</li>
+    <li>Kotlin/Android (2 years)</li>
+    <li>Elixir (1 year)
+    <ul>
+    <li>Phoenix (1 year)</li>
+    <li>Unit Testing / Integration Testing / E2E Testing
+    <ul>
+    <li>ExUnit</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li>Ruby (3 years)
+    <ul>
+    <li>Rails (3 years)</li>
+    <li>Unit Testing / Integration Testing / E2E Testing
+    <ul>
+    <li>Rspec</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li>Relational Databases
+    <ul>
+    <li>MySQL/MariaDB (3 years)</li>
+    <li>PostgreSQL (4 year)</li>
+    </ul>
+    </li>
+    <li>NoSQL Databases
+    <ul>
+    <li>DynamoDB (1 year)</li>
+    <li>MongoDB (6 months)</li>
+    </ul>
+    </li>
+    <li>Search Backends
+    <ul>
+    <li>ElasticSearch (6 months)</li>
+    </ul>
+    </li>
+    <li>Containerization and Operating Systems
+    <ul>
+    <li>Docker (2 years)</li>
+    <li>Linux (11 years)</li>
+    <li>OSX (4 years)</li>
+    <li>Windows (13 years)</li>
+    </ul>
+    </li>
+    <li>Extras</li>
+    <li>AWS [IAM, EC2, ECS, ELB, S3, Route53, IoT, DDB, Firehose, Lambda, Kinesis, ElasticBeanstalk] (2 years)</li>
+    <li>Git (8 years)</li>
+    <li>Github (6 years)</li>
+    <li>API Security (OAuth, Basic, Token, JWT) (2 years)</li>
+    <li>Scalable Web Services with AWS (2 years)</li>
+    <li>TDD (3 years)</li>
+    <li>Agile Development (3 years)</li>
+    <li>Languages
+    <ul>
+    <li>Spanish (Native)</li>
+    <li>English (Fluent - Cambridge: FCE B2, TOEFL IBT: 104)</li>
+    <li>Korean (Beginner-Intermediate: TOPIK 1 A1)</li>
+    <li>Japanese (Beginner)</li>
+    </ul>
+    </li>
+    </ul>

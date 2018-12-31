@@ -1,0 +1,17 @@
+<div class="column is-three-fifths is-offset-one-fifth posts" id="posts">
+  <% data = Alewordfire.Data.Feed.data %>
+  <% posts = filter_posts(data.entries) %>
+  <% paginator = create_paginator(posts) %>
+  <% pagination = paginate(paginator, @conn.path_params) %>
+  <%= render(
+      AlewordfireWeb.PageView, 
+      "posts.html", 
+      posts: paginate_posts(posts, pagination)
+      )%>
+  <%= render(
+      AlewordfireWeb.PageView, 
+      "pagination.html",
+      pagination: pagination,
+      conn: @conn
+      )%>
+</div>

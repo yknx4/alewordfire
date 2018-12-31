@@ -1,0 +1,12 @@
+<nav class="pagination is-right" role="navigation" aria-label="pagination">
+  <%= boolean_link("Previous", @pagination.has_previous, to: Routes.blog_page_path(@conn, :index, @pagination.previous_page), class: "pagination-previous") %>
+  <%= boolean_link("Next page", @pagination.has_next, to: Routes.blog_page_path(@conn, :index, @pagination.next_page), class: "pagination-next") %>
+  <ul class="pagination-list">
+    <li><a class="pagination-link" aria-label="Goto page 1" href="<%= Routes.blog_page_path(@conn, :index, 1) %>">1</a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <%= render_many Range.new(@pagination.current_page, min(@pagination.total_pages, @pagination.current_page + 2)), AlewordfireWeb.PageView, "pagination_link.html", as: :i, conn: @conn, pagination: @pagination  %>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page <%= @pagination.total_pages %>" href="<%= Routes.blog_page_path(@conn, :index, @pagination.total_pages) %>">
+        <%= @pagination.total_pages %></a></li>
+  </ul>
+</nav>

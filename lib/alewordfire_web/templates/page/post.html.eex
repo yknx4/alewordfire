@@ -1,0 +1,54 @@
+<% post_id = "post-#{post_ts(@page.updated)}" %>
+<article class="card post" id="<%= post_id %>">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <%= if has_primary_image(@page.content) do %>
+        <figure class="image is-64x64 is-square">
+          <img src="<%= primary_image(@page.content) %>" alt="Image">
+        </figure>
+        <% else %>
+        <span class="is-64x64 is-square">
+          <i class="fab fa-medium" aria-hidden="true"></i>
+        </span>
+        <% end %>
+      </div>
+      <div class="media-content">
+        <a href="<%= @page.url %>" target="_blank">
+          <p class="title is-4">
+            <%= @page.title %>
+          </p>
+        </a>
+        <p class="subtitle is-6">
+          <%= post_date(@page.updated) %>
+        </p>
+      </div>
+    </div>
+
+    <div class="content post-content">
+      <%= raw(@page.content) %>
+    </div>
+    <div class="fade"></div>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item"> </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item">
+          <a href="#<%= post_id %>" class="card-header-icon show" aria-label="show more">
+            Show more
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a href="#posts" class="hide" aria-label="hide content">
+            Hide
+            <span class="icon">
+              <i class="fas fa-angle-up" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</article>

@@ -1,0 +1,9 @@
+APP="aleworld"
+
+BUILD_HOST="localhost"
+BUILD_USER="yknx4"
+BUILD_AT="/Users/yknx4/Projects/alewordfire/tmp/edeliver/aleworls/builds"
+
+STAGING_HOSTS="35.211.235.71"
+STAGING_USER="yknx.4.b"
+DELIVER_TO="/opt/aleworld/"

@@ -1,0 +1,21 @@
+<% column_class = assigns[:column_class] || "column is-full" %>
+<div class="<%= column_class %>">
+  <div class="card">
+    <header class="card-header">
+      <h1 class="card-header-title">
+        <%= @title %>
+      </h1>
+      <a class="card-header-icon" aria-label="icon">
+        <span class="icon">
+          <i class="fas fa-<%= @icon %>" aria-hidden="true"></i>
+        </span>
+      </a>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <%= render AlewordfireWeb.AboutView, @template, assigns %>
+      </div>
+    </div>
+  </div>
+</div>
+  
