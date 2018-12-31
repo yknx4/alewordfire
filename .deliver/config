@@ -1,9 +1,26 @@
-APP="aleworld"
+APP="alewordfire"
 
-BUILD_HOST="localhost"
-BUILD_USER="yknx4"
-BUILD_AT="/Users/yknx4/Projects/alewordfire/tmp/edeliver/aleworls/builds"
+BUILD_HOST="aleworldbuild"
+BUILD_USER="root"
+BUILD_AT="/edeliver/aleworld/builds"
 
-STAGING_HOSTS="35.211.235.71"
-STAGING_USER="yknx.4.b"
+PRODUCTION_HOSTS="35.211.235.71"
+PRODUCTION_USER="yknx.4.b"
 DELIVER_TO="/opt/aleworld/"
+
+pre_erlang_get_and_update_deps() {
+  status "Preparing locale"
+  __sync_remote "
+    [ -f ~/.profile ] && source ~/.profile # load profile (optional)
+    set -e # fail if any command fails (recommended)
+
+    export LANGUAGE="en_US.UTF-8"
+    export LC_ALL="en_US.UTF-8"
+    locale
+
+    echo 'export LANGUAGE="en_US.UTF-8"' >> ~/.profile
+    echo 'export LC_ALL="en_US.UTF-8"' >> ~/.profile
+
+    touch /edeliver/aleworld/builds/config/prod.secret.exs
+  "
+} 
