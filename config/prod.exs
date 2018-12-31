@@ -22,7 +22,7 @@ config :alewordfire, AlewordfireWeb.Endpoint,
 config :logger, level: :info
 
 config :alewordfire, Alewordfire.Repo,
-   pool_size: 10
+   pool_size: 1
 
 # ## SSL Support
 #
