@@ -3,7 +3,7 @@ defmodule PhoenixApp.PhoenixDigestTask do
 
   def before_assembly(%Release{} = _release, _) do
     info "before assembly!"
-    case System.cmd("yarn", ["install", "--production"], cd: "/edeliver/aleworld/builds/assets") do
+    case System.cmd("yarn", ["install"], cd: "/edeliver/aleworld/builds/assets") do
       {output, 0} ->
         info output
         Mix.Task.run("phx.digest.clean")

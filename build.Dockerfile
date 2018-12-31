@@ -18,6 +18,14 @@ ENV LANG en_US.utf8
 RUN mix local.hex --force
 RUN mix local.rebar --force
 
+RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh && bash nodesource_setup.sh && apt-get install -y nodejs
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update && apt-get install -y --no-install-recommends yarn
+
+RUN node --version
+RUN yarn --version
+
 VOLUME /edeliver/aleworld
 CMD /usr/sbin/sshd -D
 EXPOSE 22

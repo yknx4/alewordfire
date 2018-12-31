@@ -22,5 +22,6 @@ pre_erlang_get_and_update_deps() {
     echo 'export LC_ALL="en_US.UTF-8"' >> ~/.profile
 
     touch /edeliver/aleworld/builds/config/prod.secret.exs
+    mkdir -p /edeliver/aleworld/builds/priv/static
   "
 } 
