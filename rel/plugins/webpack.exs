@@ -2,13 +2,18 @@ defmodule PhoenixApp.PhoenixDigestTask do
   use Mix.Releases.Plugin
 
   def before_assembly(%Release{} = _release, _) do
-    info "before assembly!"
-    case System.cmd("yarn", ["install"], cd: "/edeliver/aleworld/builds/assets") do
+    info("before assembly!")
+    Mix.Task.run("phx.digest.clean")
+
+    cd = "/edeliver/aleworld/builds/assets"
+
+    case System.cmd("yarn", ["install"], cd: cd),
+         System.cmd("yarn", ["webpack", "--mode", "--production"], cd: cd) do
       {output, 0} ->
-        info output
-        Mix.Task.run("phx.digest.clean")
+        info(output)
         Mix.Task.run("phx.digest")
         nil
+
       {output, error_code} ->
         {:error, output, error_code}
     end
