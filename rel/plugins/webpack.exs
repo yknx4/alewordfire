@@ -7,9 +7,10 @@ defmodule PhoenixApp.PhoenixDigestTask do
 
     cd = "/edeliver/aleworld/builds/assets"
 
-    with {output, 0} <- System.cmd("yarn", ["install"], cd: cd),
-         System.cmd("yarn", ["webpack", "--mode", "production"], cd: cd) do
-      info(output)
+    with {output1, 0} <- System.cmd("yarn", ["install"], cd: cd),
+         {output2, 0} <- System.cmd("yarn", ["webpack", "--mode", "production"], cd: cd) do
+      info(output1)
+      info(output2)
       Mix.Task.run("phx.digest")
       nil
     else
