@@ -7,13 +7,12 @@ defmodule PhoenixApp.PhoenixDigestTask do
 
     cd = "/edeliver/aleworld/builds/assets"
 
-    case System.cmd("yarn", ["install"], cd: cd),
+    with {output, 0} <- System.cmd("yarn", ["install"], cd: cd),
          System.cmd("yarn", ["webpack", "--mode", "--production"], cd: cd) do
-      {output, 0} ->
-        info(output)
-        Mix.Task.run("phx.digest")
-        nil
-
+      info(output)
+      Mix.Task.run("phx.digest")
+      nil
+    else
       {output, error_code} ->
         {:error, output, error_code}
     end
