@@ -46,8 +46,14 @@
     "location": "Colima, Mexico",
     "description": "",
     "list": [
-      "MagmaRooms: Native Android application to show meeting rooms schedules, getting a fast feedback of when a room was empty or free. This app is designed to be shown in fixed tablets outside of each meeting room.",
-      "Beanstack / Zoobean: In Beanstack I worked as a full stack developer working on a custom administration panel written in AngularJS, with it's backed running on Rails 4 with PostgreSQL as the database. I also maintained database, applying several  optimizations to reduce postgres response time and overall backend optimizations to reduce resources usage and increase responsiveness while site was under heavy load."
+      "Devops: Second in charge of maintaining the project infrastructure, everything is setup on Amazon Web Services. I also made the deployment pipeline and migrated our continuous integration pipeline from Codeship to CircleCI.",
+      "Integration/E2E Testing: Rebuilt the continuous integration and continuous deployment pipeline and wrote many end to end tests with Cypress.io framework",
+      "Platform Migration: Leader of the migration project where we changed most of our backend code from Rails to Node",
+      "ChatOps: Worked in the chatops team were we built a slack bot that was used to perform many tasks on the company, including roles administration, database querying, deployment, testing, among many other things. ",
+      "Backend: Wrote application code for both our legacy rails app and node project app.",
+      "Datastore: Worked with Redis, DynamoDB, and PostgreSQL as data backends.",
+      "Search: Performed Search with ElasticSearch",
+      "Serverless: Wrote on-demand functions with serverless framework integrated with Amazon Lambda"
     ]
   },
   {
@@ -63,7 +69,7 @@
       "AutoScaling application with Rolling Deployment on Amazon Elastic Beanstalk",
       "On-demand background workers with Amazon Elastic Container Services, automatically launcher with a Serverless scheduled function handling the amount of tasks to be run.",
       "Microservices: Microservice on Elixir/Phoenix to process thousands of records of numeric data",
-      "Microservices: Microservice on Node/Koa to crawl and parse thoudans of html files"
+      "Microservices: Microservice on Node/Koa to crawl scrape, and parse thoudans of html files"
     ]
   }
 ]

@@ -6,7 +6,7 @@
           <div class="columns is-vcentered">
             <div class="column">
               <h1 class="title font-title ">
-                Ale&nbsp;<span class="has-text-red-main">Figueroa</span>
+                Ale&nbsp;<span class="has-text-red-main">Ornelas</span>
               </h1>
               <h2 class="subtitle">
                 Devops Engineer, Social Rebel Transgirl, LifeHacker & Language Lover
@@ -15,7 +15,7 @@
             <div class="column is-narrow">
               <a href="<%= Routes.about_path(@conn, :index) %>">
                 <figure class="image is-128x128 is-pulled-right">
-                  <img class="is-rounded" src="<%= Routes.static_path(@conn, "/images/ale.jpg") %>" alt="Ale Figueroa
+                  <img class="is-rounded" src="<%= Routes.static_path(@conn, "/images/ale.jpg") %>" alt="Ale Ornelas
                   profile picture">
                 </figure>
               </a>
