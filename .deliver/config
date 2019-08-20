@@ -57,6 +57,6 @@ symlink_static(){
   __sync_remote "
     [ -f ~/.profile ] && source ~/.profile
     set -e
-    ln -sfn $DELIVER_TO/$APP/lib/$APP-$RELEASE$VERSION/priv/static $DELIVER_TO/$APP/static
+    ln -sfn $DELIVER_TO/$APP/lib/$APP-$RELEASE$VERSION/priv/static $DELIVER_TO/$APP/priv/static
   "
 }
