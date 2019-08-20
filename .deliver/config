@@ -46,17 +46,3 @@ pre_erlang_clean_compile() {
     APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phx.digest $SILENCE
   "
 }
-
-pre_start_deployed_release() {
-  symlink_static
-}
-
-# Symlink static assets from released app dir to the server
-symlink_static(){
-  status "Symlinking static assets path"
-  __sync_remote "
-    [ -f ~/.profile ] && source ~/.profile
-    set -e
-    ln -sfn $DELIVER_TO/$APP/lib/$APP-$RELEASE$VERSION/priv/static $DELIVER_TO/$APP/priv/static
-  "
-}
