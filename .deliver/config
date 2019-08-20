@@ -1,10 +1,10 @@
 APP="aleworld"
 
-BUILD_HOST="www.ale.world"
+BUILD_HOST="167.71.122.152"
 BUILD_USER="root"
 BUILD_AT="/root/aleword_build"
 
-PRODUCTION_HOSTS="www.ale.world" 
+PRODUCTION_HOSTS="167.71.122.152" 
 PRODUCTION_USER="root" 
 DELIVER_TO="/root/aleword_release" 
 
