@@ -7,9 +7,6 @@
 # General application configuration
 use Mix.Config
 
-config :alewordfire,
-  ecto_repos: [Alewordfire.Repo]
-
 # Configures the endpoint
 config :alewordfire, AlewordfireWeb.Endpoint,
   url: [host: "localhost"],

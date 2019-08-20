@@ -10,8 +10,6 @@ defmodule Alewordfire.Application do
     children = [
       # Start the Cache,
       {Cachex, :network},
-      # Start the Ecto repository
-      Alewordfire.Repo,
       # Start the endpoint when the application starts
       AlewordfireWeb.Endpoint
       # Starts a worker by calling: Alewordfire.Worker.start_link(arg)
