@@ -8,8 +8,8 @@
     <%= Metatags.print_tags(@conn) %>
     <% canonical_url = AlewordfireWeb.Router.Helpers.url(@conn) <> (@conn.assigns[:canonical_path] || @conn.request_path) %>
     <link rel="canonical" href="<%= canonical_url %>" />
-    <link rel="preload" href="https://fontlibrary.org/face/tex-gyre-adventor" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fontlibrary.org/face/tex-gyre-adventor"></noscript>
+    <link rel="preload" href="https://allfont.net/cache/css/tex-gyre-adventor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://allfont.net/cache/css/tex-gyre-adventor.css"></noscript>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <link rel="shortcut icon" href="<%= Routes.static_path(@conn, "/images/favicon.ico") %>"/>
     <link rel="apple-touch-icon" sizes="57x57" href="<%= Routes.static_path(@conn, "/images/apple-icon-57x57.png") %>"/>
