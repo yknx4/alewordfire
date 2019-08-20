@@ -23,8 +23,8 @@ pre_erlang_clean_compile() {
     [ -f ~/.profile ] && source ~/.profile
     set -e
 
-    cd '$BUILD_AT'
-    npm install $SILENCE
+    cd '$BUILD_AT/assets'
+    yarn install $SILENCE
   "
 
   status "Building static files"
@@ -32,9 +32,9 @@ pre_erlang_clean_compile() {
     [ -f ~/.profile ] && source ~/.profile
     set -e
 
-    cd '$BUILD_AT'
+    cd '$BUILD_AT/assets'
     mkdir -p priv/static
-    npm run deploy $SILENCE
+    yarn deploy $SILENCE
   "
 
   status "Running phoenix.digest"
