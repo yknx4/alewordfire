@@ -7,10 +7,10 @@
 |> Path.wildcard()
 |> Enum.map(&Code.eval_file(&1))
 
-use Mix.Releases.Config,
-    # This sets the default release built by `mix release`
+use Distillery.Releases.Config,
+    # This sets the default release built by `mix distillery.release`
     default_release: :default,
-    # This sets the default environment used by `mix release`
+    # This sets the default environment used by `mix distillery.release`
     default_environment: Mix.env()
 
 # For a full list of config options for both releases
@@ -31,24 +31,19 @@ environment :dev do
   # dev mode.
   set dev_mode: true
   set include_erts: false
-  set cookie: :"Q_/yC3euam}ZXy@jyN74~UN0^oImSg4WLd56MA3_s]f7**0~8eBv6KnpO^KD$N)R"
+  set cookie: :"DU9^AMW_M0x_{czt0*}p|Ca_?1a~:A]TAN2){LbIShw%r<NwaY~Gm>T^CM&2t8tT"
 end
 
 environment :prod do
-  set plugins: [PhoenixApp.PhoenixDigestTask]
   set include_erts: true
   set include_src: false
-  set cookie: :"b]axI67S7.N`%cHR53?K{Rwg?G`}XO>En){zIo<f>C$VT7@1]vc_^$0Fy8p<nNn/"
-  set commands: [
-    migrate: "rel/commands/migrate.sh",
-    seed: "rel/commands/seed.sh",
-  ]
+  set cookie: :"zenRlC=!e)xK8K;!Z.`tFX786u]A7C~PMzqiVWnohni~{t*2BC!H*i.;E?BTJypP"
   set vm_args: "rel/vm.args"
 end
 
 # You may define one or more releases in this file.
 # If you have not set a default release, or selected one
-# when running `mix release`, the first release in the file
+# when running `mix distillery.release`, the first release in the file
 # will be used by default
 
 release :alewordfire do

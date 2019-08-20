@@ -15,6 +15,7 @@ config :alewordfire, AlewordfireWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json",
   load_from_system_env: true,
   check_origin: false,
+  code_reloader: false,
   server: true,
   root: "."
 

@@ -46,7 +46,7 @@ defmodule Alewordfire.MixProject do
       {:cachex, "~> 3.1"},
       {:metatags, "~> 0.2.0"},
       {:cowboy, "~> 2.6"},
-      {:distillery, "~> 2.0"},
+      {:distillery, "~> 2.1", warn_missing: false},
       {:edeliver, ">= 1.6.0"}
     ]
   end

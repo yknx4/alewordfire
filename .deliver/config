@@ -1,27 +1,18 @@
-APP="alewordfire"
+APP="aleworld"
 
-BUILD_HOST="aleworldbuild"
+BUILD_HOST="www.ale.world"
 BUILD_USER="root"
-BUILD_AT="/edeliver/aleworld/builds"
+BUILD_AT="/root/aleword_build"
 
-PRODUCTION_HOSTS="35.211.235.71"
-PRODUCTION_USER="yknx.4.b"
-DELIVER_TO="/opt/aleworld/"
+PRODUCTION_HOSTS="www.ale.world" 
+PRODUCTION_USER="root" 
+DELIVER_TO="/root/aleword_release" 
 
 pre_erlang_get_and_update_deps() {
-  status "Preparing locale"
-  __sync_remote "
-    [ -f ~/.profile ] && source ~/.profile # load profile (optional)
-    set -e # fail if any command fails (recommended)
-
-    export LANGUAGE="en_US.UTF-8"
-    export LC_ALL="en_US.UTF-8"
-    locale
-
-    echo 'export LANGUAGE="en_US.UTF-8"' >> ~/.profile
-    echo 'export LC_ALL="en_US.UTF-8"' >> ~/.profile
-
-    touch /edeliver/aleworld/builds/config/prod.secret.exs
-    mkdir -p /edeliver/aleworld/builds/priv/static
-  "
-} 
+  local _prod_secret_path="/root/aleword_config/prod.secret.exs"
+  if [ "$TARGET_MIX_ENV" = "prod" ]; then
+    __sync_remote "
+      ln -sfn '$_prod_secret_path' '$BUILD_AT/config/prod.secret.exs'
+    "
+  fi
+}
