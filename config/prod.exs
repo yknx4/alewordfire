@@ -11,9 +11,9 @@ use Mix.Config
 # before starting your production server.
 config :alewordfire, AlewordfireWeb.Endpoint,
   http: [:inet6, port: 80],
-  url: [host: "www.ale.world", port: 80],
+  url: [host: "www.ale.world", port: 80, compress: true],
   cache_static_manifest: "priv/static/cache_manifest.json",
-  load_from_system_env: true,
+  load_from_system_env: false,
   check_origin: false,
   code_reloader: false,
   server: true,
